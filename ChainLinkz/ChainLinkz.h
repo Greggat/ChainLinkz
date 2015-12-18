@@ -18,5 +18,12 @@ public:
 	ChainLinkz operator>>(ChainLinkz &link);
 	ChainLinkz operator>>(ChainLinkz *link);
 
+	ChainLinkz ChainLinkz::unlink(ChainLinkz *link);
+	ChainLinkz ChainLinkz::unlink(ChainLinkz &link);
+	ChainLinkz unlink();
+
+	ChainLinkz* operator[](int i);
+
 	ChainLinkz(int i);
+	~ChainLinkz();
 };
